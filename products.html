@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://images.pexels.com/photos/6867964/pexels-photo-6867964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="ShopEasy Logo">
+                <h1>ShopEasy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <span id="cart-count">0</span>
+                <img src="https://media.istockphoto.com/id/1290656315/photo/golden-shopping-cart-symbol-on-a-red-background.jpg?b=1&s=612x612&w=0&k=20&c=dUQkOSg932y30H3WrQmKgNGgqkE__p8jrzZTcWuHiLQ=" alt="Cart">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="filter-section">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="home">Home & Garden</option>
+                </select>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100+">$100+</option>
+                </select>
+            </div>
+            <div class="products-grid">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ShopEasy. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
